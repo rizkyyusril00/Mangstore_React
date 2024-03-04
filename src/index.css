@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* hamburger */
+@media screen and (max-width: 768px){
+    .menu{
+        transform: scale(0);
+        transform-origin: top;
+        opacity: 0;
+        transition: all 0.4s;
+    }
+    .menu-active{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* slick */
+.slick-slide > div {
+    margin: 0 10px;
+}
+.slick-prev:before, .slick-next:before {
+    @apply hidden
+}
+
+/* input chekout */
+.checkout-input{
+    @media only screen and (min-width: 425px) {
+        width: 100%;
+    }
+}
+
+
+/* custom checkbox */
+.custom-checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 1em;
+    height: 1em;
+    border: 1px solid #000; /* Warna kuing */
+    border-radius: 4px; /* Bentuk sudut */
+    outline: none;
+    transition: background 0.3s;
+}
+.custom-checkbox:checked {
+    background-color: #EFF87A; /* Warna kuing saat checkbox dicentang */
+    border-color: #000; /* Warna kuing saat checkbox dicentang */
+}
+.custom-checkbox:checked::before {
+    content: '\2713'; /* Tanda checklist Unicode */
+    color: #000; /* Warna teks untuk tanda checklist */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* dots */
+@media only screen and (min-width: 320px)  {
+    .slick-dots {
+        width: 200px;
+        left: 50%;
+        top: 37%;
+        transform: translateX(-50%);
+        height: fit-content;
+    }
+}
+
+@media only screen and (min-width: 375px) {
+    .slick-dots {
+        width: 200px;
+        left: 50%;
+        top: 37%;
+        transform: translateX(-50%);
+        height: fit-content;
+    }
+}
+
+@media only screen and (min-width: 425px) {
+    .slick-dots {
+        width: 200px;
+        left: 50%;
+        top: 32%;
+        transform: translateX(-50%);
+        height: fit-content;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .slick-dots {
+        width: 200px;
+        left: 40px;
+        top: 320px;
+        transform: translateX(-50%);
+        height: fit-content;
+    }
+}
+
+
+.slick-dots li.slick-active button:before {
+    color: #EFF87A;
+}
+
+.slick-dots li button:before {
+    @apply text-yellow-300
+}
+.slick-dots li button:before{
+    content: '';
+    background-color: #EFF87A;
+    width: 20px;
+    height: 5px;
+    border-radius: 20%;
+}
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
