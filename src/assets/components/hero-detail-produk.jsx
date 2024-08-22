@@ -6,9 +6,21 @@ import Produk5 from '../../img/produk5.jpg'
 import Produk7 from '../../img/produk7.png'
 import Produk6 from '../../img/produk6.png'
 import ReviewProduk from "./review-produk";
+import React from "react";
+import { Link } from "react-router-dom";
 
 
 export default function HeroDetailProduk(){
+    const [counter, setCounter] = React.useState(1);
+    function increment() {
+        setCounter(counter + 1);
+    }
+
+    function decrement() {
+        if (counter > 1) {
+            setCounter(counter - 1);
+        }
+    }
     return(
         <>
             <section>
@@ -22,10 +34,10 @@ export default function HeroDetailProduk(){
                                 {/* mini pict */}
                                 <div className="mini-img mt-2 flex md:hidden px-3">
                                     <div className="grid grid-cols-4 grid-rows-1 w-full gap-[20px]">
-                                        <div className="h-[67px]"><img src={Produk3} alt="" className="h-[67px] w-full" /></div>
-                                        <div className="h-[67px]"><img src={Produk1} alt="" className="h-[67px] w-full" /></div>
-                                        <div className="h-[67px]"><img src={Produk3} alt="" className="h-[67px] w-full" /></div>
-                                        <div className="h-[67px]"><img src={Produk1} alt="" className="h-[67px] w-full" /></div>
+                                        <div className="h-[67px]"><img src={Produk3} alt="" className="h-[67px] w-full object-cover" /></div>
+                                        <div className="h-[67px]"><img src={Produk1} alt="" className="h-[67px] w-full object-cover" /></div>
+                                        <div className="h-[67px]"><img src={Produk3} alt="" className="h-[67px] w-full object-cover" /></div>
+                                        <div className="h-[67px]"><img src={Produk1} alt="" className="h-[67px] w-full object-cover" /></div>
                                     </div>
                                 </div>
 
@@ -117,22 +129,22 @@ export default function HeroDetailProduk(){
                                         </div>
                                         {/* 3 */}
                                         <div className="mt-5 flex">
-                                            <p className="px-[4px] py-[2px] lg:px-[8px] lg:py-[5px] lg:text-[16px] text-[14px] border-black border">-</p>
-                                            <input type="text" placeholder="1" className="px-[4px] py-[2px] lg:px-[8px] lg:py-[5px] lg:text-[16px] text-[14px] border-black border w-full lg:w-2/5" />
-                                            <p className="px-[4px] py-[2px] lg:px-[8px] lg:py-[5px] lg:text-[16px] text-[14px] border-black border">+</p>
+                                            <button onClick={decrement} className="px-[4px] py-[2px] lg:px-[8px] lg:py-[5px] lg:text-[16px] text-[14px] border-black border">-</button>
+                                            <input type="text" disabled placeholder={counter} className="px-[4px] py-[2px] lg:px-[8px] lg:py-[5px] lg:text-[16px] text-[14px] border-black border w-full lg:w-2/5 text-center" />
+                                            <button onClick={increment} className="px-[4px] py-[2px] lg:px-[8px] lg:py-[5px] lg:text-[16px] text-[14px] border-black border">+</button>
                                         </div>
                                     </div>
                                     {/* purchase */}
-                                    <div className="text-center mt-5 py-4 bg-secondary w-full border-t-[1px] border-l-[1px] border-r-[3px] border-b-[3px] border-black">
+                                    <div className="text-center mt-5 py-4 bg-secondary w-full border-t-[1px] border-l-[1px] border-r-[3px] border-b-[3px] border-black transition-transform ease-in-out transform-gpu hover:scale-95 duration-500">
                                         <h1 className="text-primary"><i className="bi bi-cart3 mr-5"></i>Add To Cart</h1>
                                     </div>
                                     <div className="text-center">
                                         <p className="text-primary my-11 lg:my-[38px]">Or Checkout On :</p>
                                     </div>
                                     <div className="flex gap-2 text-center">
-                                        <a href="" className="border border-black w-1/3 py-[13px] text-primary">Tokopedia</a>
-                                        <a href="" className="border border-black w-1/3 py-[13px] text-primary">Shopee</a>
-                                        <a href="" className="border border-black w-1/3 py-[13px] text-primary">Whatsapp</a>
+                                        <Link to='https://www.tokopedia.com/' target="blank" className="border border-black w-1/3 py-[13px] text-primary hover:bg-secondary">Tokopedia</Link>
+                                        <Link to='https://shopee.co.id/' target="blank" className="border border-black w-1/3 py-[13px] text-primary hover:bg-secondary">Shopee</Link>
+                                        <Link to='https://api.whatsapp.com/send/?phone=6285163613133&text&type=phone_number&app_absent=0' target="blank" className="border border-black w-1/3 py-[13px] text-primary hover:bg-secondary">Whatsapp</Link>
                                     </div>
                                 </div>
                             </div>

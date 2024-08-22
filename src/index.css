@@ -9,14 +9,48 @@
     .menu{
         transform: scale(0);
         transform-origin: top;
-        opacity: 0;
-        transition: all 0.4s;
+        transition: all 0.5s;
+        @apply opacity-0
     }
     .menu-active{
         transform: scale(1);
         opacity: 1;
     }
+    .searchMobile{
+        @apply top-[-78px];
+        @apply left-0
+    }
+    .searchMobile-active{
+        @apply top-[0];
+        @apply left-0
+    }
 }
+/* searchbar */
+.search-bar{
+    transform : scale(0);
+    transform-origin: center ;
+    opacity:0;
+    transition: 0.5s;
+}
+.search-bar-active{
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* scrollbar overflow y */
+.scrollbar-checkout::-webkit-scrollbar{
+    width: 5px;
+    margin-right: 30px;
+}
+
+.scrollbar-checkout::-webkit-scrollbar-thumb{
+    background-color: #EFF87A;
+    border-radius: 10px;
+}
+.scrollbar-checkout::-webkit-scrollbar-track{
+    background-color: #1E3A2B;
+}
+
 
 /* slick */
 .slick-slide > div {

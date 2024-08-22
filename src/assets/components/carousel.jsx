@@ -3,6 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Produk2 from '../../img/produk2.jpeg'
 import Produk3 from '../../img/produk3.jpg'
+import Produk26 from '../../img/produk26.jpg'
 
 function PauseOnHover2() {
     var settings = {
@@ -22,25 +23,25 @@ function PauseOnHover2() {
                     {/* 1 */}
                     <div>
                         <div className="carousel-cell-3">
-                            <img src={Produk2} alt="" className="w-full h-[383px]" />
+                            <img src={Produk2} alt="" className="w-full h-[383px] object-cover" />
                         </div>
                     </div>
                     {/* 2 */}
                     <div>
                         <div className="carousel-cell-3">
-                            <img src={Produk2} alt="" className="w-full h-[383px]" />
+                            <img src={Produk2} alt="" className="w-full h-[383px] object-cover" />
                         </div>
                     </div>
                     {/* 3 */}
                     <div>
                         <div className="carousel-cell-3">
-                            <img src={Produk2} alt="" className="w-full h-[383px]" />
+                            <img src={Produk2} alt="" className="w-full h-[383px] object-cover" />
                         </div>
                     </div>
                     {/* 4 */}
                     <div>
                         <div className="carousel-cell-3">
-                            <img src={Produk2} alt="" className="w-full h-[383px]" />
+                            <img src={Produk2} alt="" className="w-full h-[383px] object-cover" />
                         </div>
                     </div>
                 </Slider>
@@ -54,25 +55,25 @@ function PauseOnHover2() {
                     {/* 1 */}
                     <div>
                         <div className="carousel-cell-3">
-                            <img src={Produk3} alt="" className="h-[650px] w-[557px]" />  
+                            <img src={Produk26} alt="" className="h-[650px] w-[557px] object-cover" />  
                         </div>
                     </div>
                     {/* 2 */}
                     <div>
                         <div className="carousel-cell-3">
-                            <img src={Produk3} alt="" className="h-[650px] w-[557px]" />  
+                            <img src={Produk26} alt="" className="h-[650px] w-[557px] object-cover" />  
                         </div>
                     </div>
                     {/* 3 */}
                     <div>
                         <div className="carousel-cell-3">
-                            <img src={Produk3} alt="" className="h-[650px] w-[557px]" />  
+                            <img src={Produk26} alt="" className="h-[650px] w-[557px] object-cover" />  
                         </div>
                     </div>
                     {/* 4 */}
                     <div>
                         <div className="carousel-cell-3">
-                            <img src={Produk3} alt="" className="h-[650px] w-[557px]" />  
+                            <img src={Produk26} alt="" className="h-[650px] w-[557px] object-cover" />  
                         </div>
                     </div>
                     

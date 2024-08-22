@@ -33,7 +33,7 @@ function PauseOnHover() {
                 <Slider {...settings}>
                     <div className="bg-secondary h-[330px] md:h-[416px] w-full md:mt-7 lg:mt-0">
                         <div className="carousel-cell h-[292px] w-full">
-                            <img src={Produk2} alt="" className="w-full h-[165px] md:h-[207px] lg:h-[287px]" />
+                            <img src={Produk2} alt="" className="w-full object-cover h-[165px] md:h-[207px] lg:h-[287px]" />
                             <h1 className="text-[12px] font-bold ml-2 mt-2 text-primary">Womans wear</h1>
                             <p className="text-[14px] md:text-[16px] ml-2 my-1 font-bold text-primary">Hoodie bahan dengan 100% katun</p>
                             <p className="text-[12px] font-bold ml-2 mb-1 text-primary">Rp. 300.000,-</p>
@@ -42,7 +42,7 @@ function PauseOnHover() {
                     </div>
                     <div className="bg-secondary h-[330px] md:h-[416px] w-full md:mt-7 lg:mt-0">
                         <div className="carousel-cell h-[292px] w-full">
-                            <img src={Produk2} alt="" className="w-full h-[165px] md:h-[207px] lg:h-[287px]" />
+                            <img src={Produk2} alt="" className="w-full object-cover h-[165px] md:h-[207px] lg:h-[287px]" />
                             <h1 className="text-[12px] font-bold ml-2 mt-2 text-primary">Womans wear</h1>
                             <p className="text-[14px] md:text-[16px] ml-2 my-1 font-bold text-primary">Hoodie bahan dengan 100% katun</p>
                             <p className="text-[12px] font-bold ml-2 mb-1 text-primary">Rp. 300.000,-</p>
@@ -51,7 +51,7 @@ function PauseOnHover() {
                     </div>
                     <div className="bg-secondary h-[330px] md:h-[416px] w-full md:mt-7 lg:mt-0">
                         <div className="carousel-cell h-[292px] w-full">
-                            <img src={Produk2} alt="" className="w-full h-[165px] md:h-[207px] lg:h-[287px]" />
+                            <img src={Produk2} alt="" className="w-full object-cover h-[165px] md:h-[207px] lg:h-[287px]" />
                             <h1 className="text-[12px] font-bold ml-2 mt-2 text-primary">Womans wear</h1>
                             <p className="text-[14px] md:text-[16px] ml-2 my-1 font-bold text-primary">Hoodie bahan dengan 100% katun</p>
                             <p className="text-[12px] font-bold ml-2 mb-1 text-primary">Rp. 300.000,-</p>
@@ -60,7 +60,7 @@ function PauseOnHover() {
                     </div>
                     <div className="bg-secondary h-[330px] md:h-[416px] w-full md:mt-7 lg:mt-0">
                         <div className="carousel-cell h-[292px] w-full">
-                            <img src={Produk2} alt="" className="w-full h-[165px] md:h-[207px] lg:h-[287px]" />
+                            <img src={Produk2} alt="" className="w-full object-cover h-[165px] md:h-[207px] lg:h-[287px]" />
                             <h1 className="text-[12px] font-bold ml-2 mt-2 text-primary">Womans wear</h1>
                             <p className="text-[14px] md:text-[16px] ml-2 my-1 font-bold text-primary">Hoodie bahan dengan 100% katun</p>
                             <p className="text-[12px] font-bold ml-2 mb-1 text-primary">Rp. 300.000,-</p>

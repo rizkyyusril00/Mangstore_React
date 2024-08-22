@@ -10,7 +10,8 @@ import CheckoutPage from './assets/pages/Checkout'
 import Blog from './assets/pages/Blog'
 import DetailBlog from './assets/pages/DetailBlog'
 import Contact from './assets/pages/Contact'
-import Footer from './assets/components/footer'
+import Footer from './assets/components/footer' 
+
 
 function App() {
 
@@ -20,7 +21,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/product' element={<Product />} />
-        <Route path='/detail-produk' element={<DetailProduk />} />
+        <Route path='/detailProudct' element={<DetailProduk />} />
         <Route path='/checkout' element={<CheckoutPage />} />
         <Route path='/blog' element={<Blog />} />
         <Route path='/detail-blog' element={<DetailBlog />} />

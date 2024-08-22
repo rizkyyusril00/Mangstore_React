@@ -9,7 +9,9 @@ export default function CardCheckout() {
     }
 
     function decrement() {
-        setCounter(counter - 1);
+        if (counter > 1) {
+            setCounter(counter - 1);
+        }
     }
 
     return(
@@ -31,9 +33,9 @@ export default function CardCheckout() {
                         <div className='flex justify-between mt-4'>
                             <h1 className="text-[10px] text-primary">Stock 200</h1>
                             <div className='flex justify-end w-1/2'>
-                                <p className="px-[8px] py-[1px] mr-2 h-5 text-center border-black border flex justify-center items-center"><i className="bi bi-trash3"></i></p>
+                                <p className="px-[8px] py-[1px] mr-2 h-5 text-center border-black border flex justify-center items-center hover:bg-red-500"><i className="bi bi-trash3"></i></p>
                                 <button onClick={decrement} className="px-[8px] py-[1px] h-5 text-center border-black border flex justify-center items-center">-</button>
-                                <input type="text" disabled placeholder={counter} className="checkout-input px-[8px] py-[1px] h-5 border-black border w-9 " />
+                                <input type="text" disabled placeholder={counter} className="checkout-input px-[8px] py-[1px] h-5 border-black border w-9 text-center" />
                                 <button onClick={increment} className="px-[8px] py-[1px] h-5 border-black border flex justify-center items-center">+</button>
                             </div>
                         </div>
@@ -59,9 +61,9 @@ export default function CardCheckout() {
                     </div>
                     <div className="flex justify-end items-end mt-4">
                             <div className="flex justify-end w-1/2">
-                                <p className="px-[8px] py-[1px] mr-2 h-5 text-center border-black border flex justify-center items-center"><i className="bi bi-trash3"></i></p>
+                                <p className="px-[8px] py-[1px] mr-2 h-5 text-center border-black border flex justify-center items-center hover:bg-red-500 hover:text-white hover:border-slate-200"><i className="bi bi-trash3"></i></p>
                                 <button onClick={decrement} className="px-[8px] py-[1px] h-5 text-center border-black border flex justify-center items-center">-</button>
-                                <input type="text" disabled placeholder={counter} className="px-[8px] py-[1px] h-5 border-black border md:w-[50px] " />
+                                <input type="text" disabled  placeholder={counter} className="px-[8px] py-[1px] h-5 border-black border md:w-[50px] text-center" />
                                 <button onClick={increment} className="px-[8px] py-[1px] h-5 border-black border flex justify-center items-center">+</button>
                             </div>           
                     </div>

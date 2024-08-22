@@ -37,9 +37,9 @@ export default function CheckOut(){
 
                             {/* md */}
                             <div className="md:flex gap-4 hidden">
-                                {/* kanan */}
+                                {/* kiri */}
                                 <div className="box w-2/3">
-                                    <div className="flex flex-col gap-2 h-[420px] bg-primary p-2 overflow-y-scroll">
+                                    <div className="scrollbar-checkout flex flex-col gap-2 h-[420px] bg-primary p-2 overflow-y-scroll">
                                         {/* isi cart */}
                                         <CardCheckout />
                                         <CardCheckout />
@@ -50,7 +50,7 @@ export default function CheckOut(){
                                         <CardCheckout />
                                     </div>
                                 </div>
-                                {/* kiri */}
+                                {/* kanan */}
                                 <div className="box w-1/3">
                                     {/* total harga */}
                                     <div className="p-4 border-[1px] border-black">
